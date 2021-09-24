@@ -1,0 +1,14 @@
+<h1 style="text-align: center;
+color: red;
+ box-shadow: 1px 2px #888888;
+ padding: 20px;
+ font-weight: bold;">Final Space by Olan Rogers</h1>
+
+
+<section>
+
+  <div *ngIf="allFilms">
+    <app-item
+    *ngFor="let allFilms of allFilms" [allFilms]="allFilms"></app-item>
+  </div>
+</section>
