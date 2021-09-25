@@ -8,13 +8,13 @@ import { Service } from 'src/app/services/services';
 export class HomeServicesService {
 
 
-  constructor( private a_service: Service ) { }
+  constructor(private a_service: Service) { }
   public getFilms(): Observable<Films> {
     const usetopUrl: string = `character/`;
 
     return this.a_service.getQuery(usetopUrl).pipe(
       map((res: any) => {
-        if (!res) {
+        if (!res) {
           throw new Error('Value expected!');
         } else {
 
@@ -31,7 +31,7 @@ export class HomeServicesService {
 
     return this.a_service.getQuery(usetopUrl).pipe(
       map((res: any) => {
-        if (!res) {
+        if (!res) {
           throw new Error('Value expected!');
         } else {
 

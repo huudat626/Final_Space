@@ -8,7 +8,6 @@ color: red;
 <section>
 
   <div *ngIf="allFilms">
-    <app-item
-    *ngFor="let allFilms of allFilms" [allFilms]="allFilms"></app-item>
+    <app-item *ngFor="let allFilms of allFilms" [allFilms]="allFilms"></app-item>
   </div>
 </section>

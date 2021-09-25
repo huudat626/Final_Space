@@ -9,9 +9,9 @@ import { Films } from 'src/app/model/films';
   styleUrls: ['./home.component.sass']
 })
 export class HomeComponent implements OnInit {
- public allFilms: Films[]=[];
+  public allFilms: Films[] = [];
 
-  constructor( private homeService: HomeServicesService) { }
+  constructor(private homeService: HomeServicesService) { }
 
   ngOnInit(): void {
     this.getFilms();
@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
   public getFilms(): void {
     this.homeService.getFilms().subscribe((data: any) => {
       this.allFilms = data;
-       console.log('arrRe', this.allFilms);
+      console.log('arrRe', this.allFilms);
     })
 
   }

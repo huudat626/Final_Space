@@ -10,11 +10,11 @@ import { HomeServicesService } from '../home_services/home-services.service';
 export class ItemComponent implements OnInit {
   @Input() allFilms !: any;
   public itemId: string = '';
-  constructor( private _router: Router,private  homeService: HomeServicesService) { }
+  constructor(private _router: Router, private homeService: HomeServicesService) { }
 
   ngOnInit(): void {
 
-// this.getPlaylist()
+    // this.getPlaylist()
 
   }
   // public getPlaylist(): void {

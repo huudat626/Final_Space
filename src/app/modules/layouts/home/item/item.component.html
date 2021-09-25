@@ -1,12 +1,10 @@
-
 <ng-container class="content">
-<div class="item" *ngIf="allFilms"  [routerLink]="['character',allFilms.id]">
-  <nz-card nzHoverable style="width:240px" [nzCover]="coverTemplate">
-    <nz-card-meta nzTitle="{{ allFilms.name}}" nzDescription="{{allFilms.status}}"></nz-card-meta>
-  </nz-card>
-  <ng-template #coverTemplate>
-    <img alt="example" [src]="allFilms.img_url" />
-  </ng-template>
+  <div class="item" *ngIf="allFilms" [routerLink]="['character',allFilms.id]">
+    <nz-card nzHoverable style="width:240px" [nzCover]="coverTemplate">
+      <nz-card-meta nzTitle="{{ allFilms.name}}" nzDescription="{{allFilms.status}}"></nz-card-meta>
+    </nz-card>
+    <ng-template #coverTemplate>
+      <img alt="example" [src]="allFilms.img_url" />
+    </ng-template>
   </div>
 </ng-container>
-
